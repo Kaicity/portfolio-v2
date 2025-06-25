@@ -1,5 +1,19 @@
+import Navbar from './sections/Navbar';
+
 const App = () => {
-  return <div className="text-3xl text-red-500 font-bold underline">App</div>;
+  return (
+    <div className="container mx-auto max-w-7xl">
+      {/* Navbar */}
+      <Navbar />
+      {/* Hero */}
+      {/* About */}
+      {/* Project */}
+      {/* Experrience */}
+      {/* Testtimional */}
+      {/* Contact */}
+      {/* Footer */}
+    </div>
+  );
 };
 
 export default App;
