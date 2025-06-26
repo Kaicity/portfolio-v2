@@ -40,7 +40,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.4 }}
           >
-            Passionate about building modern and seamless web experiences
+            Seamless web experiences
           </motion.p>
 
           <motion.div
