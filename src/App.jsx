@@ -1,4 +1,5 @@
 import About from './sections/About';
+import Experience from './sections/Experience';
 import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
 
@@ -8,11 +9,11 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
-      {/* About */}
       {/* Project */}
       {/* Experrience */}
       {/* Testtimional */}
