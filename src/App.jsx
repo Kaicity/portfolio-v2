@@ -2,6 +2,7 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
+import Project from './sections/Project';
 
 const App = () => {
   return (
@@ -10,11 +11,7 @@ const App = () => {
       <Hero />
       <About />
       <Experience />
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      {/* Project */}
+      <Project />
       {/* Experrience */}
       {/* Testtimional */}
       {/* Contact */}

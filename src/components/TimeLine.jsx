@@ -24,7 +24,7 @@ export const Timeline = ({ data }) => {
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
-      <div className="max-w-7xl py-20 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mt-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           NGUYEN MINH THONG
         </h2>
@@ -36,14 +36,17 @@ export const Timeline = ({ data }) => {
 
         <br />
 
-        <ul className="">
-          <li className="nav-li">
-            317 Nguyen Van Luong, Ward 12, District 6, Ho Chi Minh City
+        <ul className="px-4">
+          <li className="text-gray-400 list-disc">
+            317 Nguyen Van Luong, Phu Lam Ward, Ho Chi Minh City
           </li>
-          <li className="nav-li">+84703338458</li>
-          <li className="nav-li">nguyenminhthongtimix@gmail.com</li>
+          <li className="text-gray-400 list-disc">+84703338458</li>
+          <li className="text-gray-400 list-disc">
+            nguyenminhthongtimix@gmail.com
+          </li>
         </ul>
       </div>
+
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
@@ -54,7 +57,7 @@ export const Timeline = ({ data }) => {
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+              <h3 className="hidden md:block text-xl md:pl-20 md:text-3xl font-bold text-neutral-500 dark:text-neutral-500 ">
                 {item.title}
               </h3>
             </div>
