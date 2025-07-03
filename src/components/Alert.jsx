@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-const Alert = ({ type, text }) => {
+export const Alert = ({ type, text }) => {
   const alertVarients = {
     hidden: { opacity: 0, y: 50, scale: 0.8 },
     visible: { opacity: 1, y: 0, scale: 1 },
@@ -33,5 +33,3 @@ const Alert = ({ type, text }) => {
     </AnimatePresence>
   );
 };
-
-export default Alert;

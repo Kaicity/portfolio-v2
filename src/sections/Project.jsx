@@ -21,6 +21,7 @@ const Project = () => {
     <section
       className="relative c-space section-spacing"
       onMouseMove={handleMouseMove}
+      id="Project"
     >
       <SparklesText>
         <h2 className="text-heading">My Selected Project</h2>

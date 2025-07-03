@@ -1,29 +1,34 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Navigation() {
+  const navItems = [
+    'Home',
+    'About',
+    'Experience',
+    'Project',
+    'Feedback',
+    'Contact',
+  ];
+
   return (
-    <ul className="nav-ul">
-      <li className="nav-li">
-        <a className="nav-link" href="#Home">
-          Home
-        </a>
-      </li>
-      <li className="nav-li">
-        <a className="nav-link" href="#Home">
-          About
-        </a>
-      </li>
-      <li className="nav-li">
-        <a className="nav-link" href="#Home">
-          Work
-        </a>
-      </li>
-      <li className="nav-li">
-        <a className="nav-link" href="#Home">
-          Contact
-        </a>
-      </li>
+    <ul className="nav-ul space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:items-center">
+      {navItems.map((item) => (
+        <li key={item} className="nav-li">
+          <ScrollLink
+            to={item}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="nav-link cursor-pointer text-neutral-400 hover:text-white transition-colors"
+            activeClass="text-white font-semibold"
+            spy={true}
+          >
+            {item}
+          </ScrollLink>
+        </li>
+      ))}
     </ul>
   );
 }

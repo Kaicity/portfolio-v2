@@ -35,7 +35,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 export default function Testimonial() {
   return (
-    <div className="items-start mt-25 md:mt-35 c-space">
+    <div className="items-start mt-25 md:mt-35 c-space" id="Feedback">
       <SparklesText>
         <h2 className="text-heading">Feedback From My Clients</h2>
       </SparklesText>
