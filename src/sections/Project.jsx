@@ -34,7 +34,7 @@ const Project = () => {
       {preview && (
         <motion.img
           src={preview}
-          className="fixed top-0 left-0 z-50 object-cover h-50 rounded-lg shadow-lg pointer-events-none w-80"
+          className="hidden md:block fixed top-0 left-0 z-50 object-cover h-50 rounded-lg shadow-lg pointer-events-none w-80"
           style={{ x: springX, y: springY }}
         />
       )}
