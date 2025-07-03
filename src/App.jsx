@@ -1,8 +1,11 @@
 import About from './sections/About';
+import Contact from './sections/Contact';
 import Experience from './sections/Experience';
+import Footer from './sections/Footer';
 import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
 import Project from './sections/Project';
+import Testimonial from './sections/Testimonial';
 
 const App = () => {
   return (
@@ -12,10 +15,9 @@ const App = () => {
       <About />
       <Experience />
       <Project />
-      {/* Experrience */}
-      {/* Testtimional */}
-      {/* Contact */}
-      {/* Footer */}
+      <Testimonial />
+      <Contact />
+      <Footer />
     </div>
   );
 };
