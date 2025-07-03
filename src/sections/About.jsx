@@ -128,12 +128,12 @@ const About = () => {
             />
             <Card
               styles={{ rotate: '-45deg', top: '70%', left: '70%' }}
-              image="assets/logos/react.png"
+              image="assets/logos/react.svg"
               containerRef={grid2Container}
             />
             <Card
               styles={{ rotate: '-45deg', top: '70%', left: '25%' }}
-              image="assets/logos/nodejs.png"
+              image="assets/logos/tailwindcss.svg"
               containerRef={grid2Container}
             />
             <Card

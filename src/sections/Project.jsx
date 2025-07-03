@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { myProjects } from '../constant/index';
 import { motion, useMotionValue, useSpring } from 'motion/react';
+import { SparklesText } from '../components/SparklesText';
 
 const Project = () => {
   const x = useMotionValue(0);
@@ -21,7 +22,9 @@ const Project = () => {
       className="relative c-space section-spacing"
       onMouseMove={handleMouseMove}
     >
-      <h2 className="text-heading">My Selected Project</h2>
+      <SparklesText>
+        <h2 className="text-heading">My Selected Project</h2>
+      </SparklesText>
 
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />
       {myProjects.map((project) => (

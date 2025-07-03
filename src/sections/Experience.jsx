@@ -126,16 +126,19 @@ const Experience = () => {
                     </h2>
                   </div>
 
-                  <ul className="list-disc pl-5 text-md text-neutral-700 dark:text-neutral-300 space-y-4 mb-3">
-                    <li>
-                      Scientific Research Project: Distributed Data Management
+                  <div className="mb-4 space-y-2">
+                    <div className="flex items-center gap-2 text-md dark:text-neutral-300">
+                      ✅Scientific Research Project: Distributed Data Management
                       and Query Optimization on SQL Server
-                    </li>
-                    <li>
-                      Applied advanced query optimization techniques to enhance
-                      performance in distributed environments, including
+                    </div>
+                    <div className="flex items-center gap-2 text-md dark:text-neutral-300">
+                      ✅Applied advanced query optimization techniques to
+                      enhance performance in distributed environments, including
                       indexing strategies, query rewriting, and partitioning.
-                    </li>
+                    </div>
+                  </div>
+
+                  <ul className="list-disc pl-5 text-md text-neutral-700 dark:text-neutral-300 space-y-4 mb-3">
                     <li>
                       <strong>Certificate:</strong>
                     </li>

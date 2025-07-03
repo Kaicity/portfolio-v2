@@ -1,18 +1,18 @@
 export const myProjects = [
   {
     id: 1,
-    title: 'E-commerce Platform',
+    title: 'Hotel Management System',
     description:
-      'Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.',
+      'A comprehensive hotel booking and room management platform built as a Winform and DevExpress UI',
     subDescription: [
-      'Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.',
-      'Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.',
-      'Designed a responsive frontend with Tailwind CSS, enhancing user experience.',
-      'Added payment systems, localization, and product filtering for functionality improvements.',
+      'Designed database schema and system architecture.',
+      'Developed user-friendly room selection and booking interface.',
+      'Implemented core functionalities including booking, check-in/out, and admin dashboard.',
+      'Deployed final version and documented on GitHub and build production version for window',
     ],
-    href: '',
+    href: 'https://github.com/Kaicity/HOTELMANAGESYSTEM',
     logo: '',
-    image: '/assets/projects/accessories.jpg',
+    image: '/assets/projects/hotel-system.png',
     tags: [
       {
         id: 1,
@@ -26,146 +26,37 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: 'Ef Core',
-        path: '/assets/logos/efcore.png',
+        name: 'Entity Framework',
+        path: '/assets/logos/entityframwork.png',
       },
       {
         id: 4,
-        name: 'TailwindCSS',
-        path: '/assets/logos/tailwindcss.svg',
+        name: 'Microsoft SQL Server',
+        path: '/assets/logos/mssql.png',
       },
     ],
+    duration: 'March 2023 – May 2023',
+    demoHref: 'N/A',
   },
   {
     id: 2,
-    title: 'Authentication & Authorization System',
+    title: 'SB Shuttle Tini App',
     description:
-      'A secure authentication and authorization system using Auth0 for seamless user management.',
+      'An airport cargo transportation application built during a hackathon to streamline logistics and delivery workflows.',
     subDescription: [
-      'Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.',
-      'Implemented role-based access control (RBAC) for fine-grained user permissions.',
-      'Developed a React-based frontend with Tailwind CSS for a sleek user experience.',
-      'Connected to a secure SQLite database for user data storage.',
+      'Formed a team and advanced to Top 30 in a national hackathon competition.',
+      'Developed the SB Shuttle application using JavaScript and the Tini App framework.',
+      'Implemented features for route planning, cargo tracking, and delivery management.',
+      'Presented the project to a panel of judges during the final demo round.',
     ],
-    href: '',
+    href: 'https://github.com/YangTuanAnh/sbshuttle',
     logo: '',
-    image: '/assets/projects/auth-system.jpg',
+    image: '/assets/projects/sb-tiki.png',
     tags: [
       {
         id: 1,
-        name: 'Auth0',
-        path: '/assets/logos/auth0.svg',
-      },
-      {
-        id: 2,
-        name: 'React',
-        path: '/assets/logos/react.svg',
-      },
-      {
-        id: 3,
-        name: 'SQLite',
-        path: '/assets/logos/sqlite.svg',
-      },
-      {
-        id: 4,
-        name: 'TailwindCSS',
-        path: '/assets/logos/tailwindcss.svg',
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: 'Blazor Web App',
-    description:
-      'A modern, interactive web application built with Blazor WebAssembly and .NET Core.',
-    subDescription: [
-      'Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.',
-      'Implemented API interactions using .NET Core for a robust backend.',
-      'Designed responsive UI components with Tailwind CSS for an enhanced UX.',
-      'Integrated SQLite for efficient client-side database storage.',
-    ],
-    href: '',
-    logo: '',
-    image: '/assets/projects/blazor-app.jpg',
-    tags: [
-      {
-        id: 1,
-        name: 'Blazor',
-        path: '/assets/logos/blazor.svg',
-      },
-      {
-        id: 2,
-        name: '.NET Core',
-        path: '/assets/logos/dotnetcore.svg',
-      },
-      {
-        id: 3,
-        name: 'SQLite',
-        path: '/assets/logos/sqlite.svg',
-      },
-      {
-        id: 4,
-        name: 'TailwindCSS',
-        path: '/assets/logos/tailwindcss.svg',
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: 'C++ Game Engine',
-    description:
-      'A lightweight C++ game engine designed for 2D and 3D game development.',
-    subDescription: [
-      'Built a powerful rendering engine using OpenGL and C++.',
-      'Developed a physics engine with collision detection and particle effects.',
-      'Implemented a scripting system for easy game customization.',
-      'Optimized performance with multi-threading and efficient memory management.',
-    ],
-    href: '',
-    logo: '',
-    image: '/assets/projects/game-engine.jpg',
-    tags: [
-      {
-        id: 1,
-        name: 'C++',
-        path: '/assets/logos/cplusplus.svg',
-      },
-      {
-        id: 2,
-        name: 'C#',
-        path: '/assets/logos/csharp.svg',
-      },
-      {
-        id: 3,
-        name: 'Git',
-        path: '/assets/logos/git.svg',
-      },
-      {
-        id: 4,
-        name: 'Microsoft',
-        path: '/assets/logos/microsoft.svg',
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: 'WordPress Custom Theme',
-    description:
-      'A fully customizable WordPress theme optimized for performance and SEO.',
-    subDescription: [
-      'Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.',
-      'Integrated Tailwind CSS for modern styling and UI enhancements.',
-      'Optimized SEO and page speed using Vite.js for fast builds.',
-      'Implemented custom widgets and plugin compatibility for extended functionality.',
-    ],
-    href: '',
-    logo: '',
-    image: '/assets/projects/wordpress-theme.jpg',
-    tags: [
-      {
-        id: 1,
-        name: 'WordPress',
-        path: '/assets/logos/wordpress.svg',
+        name: 'Javascript',
+        path: '/assets/logos/javascript.svg',
       },
       {
         id: 2,
@@ -174,106 +65,185 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: 'CSS3',
+        name: 'SCSS',
         path: '/assets/logos/css3.svg',
       },
       {
         id: 4,
-        name: 'Vite.js',
-        path: '/assets/logos/vitejs.svg',
+        name: 'Tini Framework',
+        path: '/assets/logos/tiniapp.png',
       },
     ],
+    duration: 'June 2023 – August 2023',
+    demoHref: 'N/A',
   },
   {
-    id: 6,
-    title: 'Online Learning Platform',
+    id: 3,
+    title: 'Cloth Store Ecommerce',
     description:
-      'A web application that allows users to enroll in courses, watch video lectures, and take quizzes.',
+      'An e-commerce clothing website built with a microservices architecture, offering a seamless and scalable shopping experience.',
     subDescription: [
-      'Built using Blazor WebAssembly for a seamless SPA experience.',
-      'Implemented video streaming with Azure Media Services.',
-      'Added a quiz system with dynamic question generation and real-time grading.',
-      'Integrated Stripe API for secure payment processing.',
+      'Designed UI/UX on Figma focus prototype and planned system Microservices Architecture.',
+      'Implemented core features: product browsing, cart, and checkout.',
+      'Built frontend with Angular and backend with Spring Boot.',
+      'Integrated MySQL, Firebase, and real-time websocket updates.',
+      'Containerized services using Docker and deployed to cloud platforms.',
     ],
-    href: '',
+    href: 'https://github.com/Kaicity/Cloth-Store-Ecommerce',
     logo: '',
-    image: '/assets/projects/elearning.jpg',
+    image: '/assets/projects/cloth-store.png',
     tags: [
       {
         id: 1,
-        name: 'Blazor',
-        path: '/assets/logos/blazor.svg',
+        name: 'Angular',
+        path: '/assets/logos/angular.png',
       },
       {
         id: 2,
-        name: 'Azure',
-        path: '/assets/logos/azure.svg',
+        name: 'Spring boot',
+        path: '/assets/logos/spring.png',
       },
       {
         id: 3,
-        name: 'Stripe',
-        path: '/assets/logos/stripe.svg',
+        name: 'MySQL',
+        path: '/assets/logos/mysql.png',
       },
       {
         id: 4,
+        name: 'Docker',
+        path: '/assets/logos/docker.png',
+      },
+      {
+        id: 5,
         name: 'TailwindCSS',
         path: '/assets/logos/tailwindcss.svg',
       },
+      {
+        id: 6,
+        name: 'Firebase',
+        path: '/assets/logos/firebase.png',
+      },
     ],
-  },
-];
-
-export const mySocials = [
-  {
-    name: 'WhatsApp',
-    href: '',
-    icon: '/assets/socials/whatsApp.svg',
+    duration: 'August 2023 – December 2023',
+    demoHref: 'N/A',
   },
   {
-    name: 'Linkedin',
-    href: 'https://www.linkedin.com/in/ali-sanati/',
-    icon: '/assets/socials/linkedIn.svg',
-  },
-  {
-    name: 'Instagram',
-    href: 'https://www.instagram.com/ali.sanatidev/reels/',
-    icon: '/assets/socials/instagram.svg',
-  },
-];
-
-export const experiences = [
-  {
-    title: 'Software Developer',
-    job: 'Security & Defense Projects',
-    date: '2021-2023',
-    contents: [
-      'Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.',
-      'Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.',
-      'Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.',
-      'Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.',
-      'Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.',
+    id: 4,
+    title: 'VietGroup Net',
+    description:
+      'A hierarchical employee management system for tracking and organizing staff across departments.',
+    subDescription: [
+      'Gathered business requirements and defined system specifications.',
+      'Designed user interface and user experience flows.',
+      'Developed core system functionalities including user roles and access levels.',
+      'Conducted testing, deployment, and project handoff.',
     ],
+    href: 'https://github.com/VietGroupNet/Frontend',
+    logo: '',
+    image: '/assets/projects/vge.png',
+    tags: [
+      {
+        id: 1,
+        name: 'ReactJS',
+        path: '/assets/logos/react.svg',
+      },
+      {
+        id: 2,
+        name: 'React Vite',
+        path: '/assets/logos/vitejs.svg',
+      },
+      {
+        id: 3,
+        name: 'NodeJs Express',
+        path: '/assets/logos/nodejs.png',
+      },
+      {
+        id: 4,
+        name: 'MongoDB',
+        path: '/assets/logos/mongodb.png',
+      },
+      {
+        id: 5,
+        name: 'Ant Design',
+        path: '/assets/logos/antd.png',
+      },
+      {
+        id: 6,
+        name: 'Docker',
+        path: '/assets/logos/docker.png',
+      },
+      {
+        id: 7,
+        name: 'Firebase',
+        path: '/assets/logos/firebase.png',
+      },
+    ],
+    duration: 'September 2024 – December 2024',
+    demoHref: 'N/A',
   },
   {
-    title: 'Back-End Developer',
-    job: 'Car Manufacture',
-    date: '2023-2024',
-    contents: [
-      'Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.',
-      'Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:',
-      '✅ Implemented secure APIs, following ISO 26262 automotive safety standards.',
-      '✅ Ensured data privacy for customers and partners through industry-compliant protocols.',
-      '✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.',
+    id: 5,
+    title: 'ILC',
+    description:
+      'A legal information and member management platform developed for the Institute of Legal Science and Corporate Development (ILC).',
+    subDescription: [
+      'Built in a 4-member freelance team within one week.',
+      'Developed using React.js, Next.js, Node.js, and Express.',
+      'Implemented role-based user management and article publishing workflow.',
+      'Added features for HR statistics, monthly article view reports, and consultation scheduling.',
     ],
-  },
-  {
-    title: 'Freelance Developer',
-    job: 'Self-Employed',
-    date: '2025-Present',
-    contents: [
-      'Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.',
-      'Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.',
+    href: 'https://github.com/Kaicity/IOLSACD-client',
+    logo: '',
+    image: '/assets/projects/ilc.png',
+    tags: [
+      {
+        id: 1,
+        name: 'ReactJS',
+        path: '/assets/logos/react.svg',
+      },
+      {
+        id: 2,
+        name: 'React Vite',
+        path: '/assets/logos/vitejs.svg',
+      },
+      {
+        id: 3,
+        name: 'NextJS',
+        path: '/assets/logos/nextjs-icon.png',
+      },
+      {
+        id: 4,
+        name: 'Shadcn UI',
+        path: '/assets/logos/shadcn.png',
+      },
+      {
+        id: 5,
+        name: 'TailwindCSS',
+        path: '/assets/logos/tailwindcss.svg',
+      },
+      {
+        id: 6,
+        name: 'NodeJs Express',
+        path: '/assets/logos/nodejs.png',
+      },
+      {
+        id: 7,
+        name: 'MongoDB',
+        path: '/assets/logos/mongodb.png',
+      },
+      {
+        id: 8,
+        name: 'Ant Design',
+        path: '/assets/logos/antd.png',
+      },
+      {
+        id: 9,
+        name: 'Firebase',
+        path: '/assets/logos/firebase.png',
+      },
     ],
+    duration: 'February 2025 – May 2025 ',
+    demoHref: 'https://www.ilcvn.vn/',
   },
 ];
 export const reviews = [

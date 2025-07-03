@@ -10,6 +10,8 @@ const ProjectCard = ({
   image,
   tags,
   setPreview,
+  duration,
+  demoHref,
 }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -20,12 +22,27 @@ const ProjectCard = ({
         onMouseLeave={() => setPreview(null)}
       >
         <div>
+          <h4 className="subtext mb-2">{duration}</h4>
           <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
+          <div className="flex flex-wrap gap-x-3 md:flex gap-5 mt-2 text-sand">
             {tags.map((tag) => (
-              <span>{tag.name}</span>
+              <span key={tag.name}>{tag.name}</span>
             ))}
           </div>
+
+          {demoHref && (
+            <div className="flex gap-3 items-center mt-2">
+              <h4 className="text-amber-50">View site:</h4>
+              <a
+                href={demoHref}
+                className="text-blue-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i>{demoHref}</i>
+              </a>
+            </div>
+          )}
         </div>
         <button
           className="flex items-center gap-1 cursor-pointer hover-animation"
