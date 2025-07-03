@@ -306,12 +306,12 @@ export const mySocials = [
   },
   {
     name: 'Linkedin',
-    href: 'https://www.linkedin.com/in/ali-sanati/',
+    href: '',
     icon: '/assets/socials/linkedIn.svg',
   },
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/ali.sanatidev/reels/',
+    href: '',
     icon: '/assets/socials/instagram.svg',
   },
 ];
