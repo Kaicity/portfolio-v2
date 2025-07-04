@@ -1,3 +1,4 @@
+import Scrollable from './components/Scrollable';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import Experience from './sections/Experience';
@@ -18,6 +19,7 @@ const App = () => {
       <Testimonial />
       <Contact />
       <Footer />
+      <Scrollable />
     </div>
   );
 };

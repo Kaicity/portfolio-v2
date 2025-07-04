@@ -32,7 +32,7 @@ const Hero = () => {
             </Float>
           </Suspense>
           <Rig />
-          {/* <OrbitControls /> */}
+          <OrbitControls />
         </Canvas>
       </figure>
     </section>

@@ -11,7 +11,6 @@ const ProjectCard = ({
   tags,
   setPreview,
   duration,
-  demoHref,
 }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -29,20 +28,6 @@ const ProjectCard = ({
               <span key={tag.name}>{tag.name}</span>
             ))}
           </div>
-
-          {demoHref && (
-            <div className="flex gap-3 items-center mt-2">
-              <h4 className="text-amber-50">View site:</h4>
-              <a
-                href={demoHref}
-                className="text-blue-400"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i>{demoHref}</i>
-              </a>
-            </div>
-          )}
         </div>
         <button
           className="flex items-center gap-1 cursor-pointer hover-animation"
