@@ -315,3 +315,75 @@ export const mySocials = [
     icon: '/assets/socials/instagram.svg',
   },
 ];
+
+export const experiences = [
+  {
+    title: 'Education',
+    images: ['/assets/timeline/dhsg_1.webp', '/assets/timeline/dhsg_2.webp'],
+    videoUrl: '',
+    job: 'Study Information Technology at Sai Gon University',
+    date: '2020-2025',
+    contents: [
+      'Built a strong academic foundation in Technical Software, with a focus on software development, systems engineering, and programming principles. Completed intensive coursework in C programming, algorithms and data structures, object-oriented design, databases, computer networks, and operating systems, Data Model, Framework other.',
+      'Participated in the TIKI Hackathon 2022 and achieved Top 30 out of 500+ teams.',
+      'Developed multiple Full-Stack website E-commerce applications using AngularJS, Java Spring and data storage is MySQL use Microservices Architecture System',
+      ' Completed a final-year Front-End Angular Developer Internship at Cozwork JSC, contributing to real-world development workflows in an Scrum team.',
+      'Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.',
+    ],
+    certificate: '',
+  },
+  {
+    title: 'Tiki Tini App Hackathon',
+    images: [],
+    videoUrl: '5t8v-swDjLU?si=VZYtTMuvbMpcDvIp',
+    job: 'SB Shuttle',
+    date: '2022',
+    contents: [
+      'Participated in backend development and API integration to support business features.',
+      'Utilized JavaScript and the Tiki Tini App framework throughout the development lifecycle.',
+      ' Hackathon award in the top 30',
+    ],
+    certificate: 'hackathon',
+  },
+  {
+    title: 'Front-End Developer',
+    images: [],
+    videoUrl: '',
+    job: 'Cloth Store',
+    date: '2023-2024',
+    contents: [
+      'Designed and developed a full-featured e-commerce clothing platform using a Microservices Architecture.',
+      'Built the frontend with Angular and the backend with Spring Boot, handling complete development lifecycle from design to deployment. ',
+      '✅ Design UI/UX on Figma for Clients and Admin Application',
+      '✅ Utilized MySQL, SQL Server, and Firebase for data storage and real-time updates. ',
+      '✅ Deployed services using Docker, hosted on AWS and Google Cloud Platform. ',
+    ],
+    certificate: '',
+  },
+  {
+    title: 'Research Science',
+    images: [],
+    videoUrl: '',
+    job: 'Developing Web Systems based on Distributed Databases',
+    date: '2025-Present',
+    contents: [
+      'Scientific Research Project: Distributed Data Management and Query Optimization on SQL Server',
+      'Applied advanced query optimization techniques to enhance performance in distributed environments, include indexing strategies, query rewriting, and partitioning.',
+    ],
+    certificate: 'rs',
+  },
+  {
+    title: 'Freelance Developer',
+    images: [],
+    videoUrl: '',
+    job: 'ILC Outsouce',
+    date: '2025-Present',
+    contents: [
+      'Collaborated in a 4-person freelance team to develop a legal news and member management platform for ILC.',
+      'Developed RESTful APIs with Back-End',
+      'Implemented key features such as user authentication, role-based access control, article publishing, and member subscription management.',
+      'Deployed frontend services using Vercel, hosted the backend on TenTen server, and integrated Cloudflare for web performance optimization and DDoS protection',
+    ],
+    certificate: '',
+  },
+];

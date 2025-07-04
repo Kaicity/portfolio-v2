@@ -3,6 +3,12 @@ import { BackgroundBeamsWithCollision } from '../components/BackgroundBeamsWithC
 import Card from '../components/Card';
 import { SkillBar } from '../components/SkillBar';
 import { SparklesText } from '../components/SparklesText';
+import { motion } from 'motion/react';
+import {
+  fadeInFramer,
+  slideInLeft,
+  slideInRight,
+} from '../helper/fadeInFramer';
 
 const About = () => {
   const grid2Container = useRef();
@@ -20,7 +26,7 @@ const About = () => {
             <img
               src="assets/avatar/avatar.png"
               alt="Nguyen Minh Thong"
-              className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover"
+              className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"
             />
             <div>
               <h3 className="text-2xl font-bold">Nguyen Minh Thong</h3>
@@ -96,7 +102,15 @@ const About = () => {
           </div>
         </BackgroundBeamsWithCollision>
 
-        <div ref={grid2Container} className="grid-2 grid-default-color">
+        {/* Grid 2 */}
+        <motion.div
+          ref={grid2Container}
+          className="grid-2 grid-default-color"
+          variants={slideInRight(0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="flex items-center justify-center w-full h-full">
             <p className="flex items-end text-gray-500 text-5xl">
               Code is My Life
@@ -142,10 +156,16 @@ const About = () => {
               containerRef={grid2Container}
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* Grid 3 */}
-        <div className="grid-3 grid-black-color">
+        <motion.div
+          className="grid-3 grid-black-color"
+          variants={slideInRight(0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="z-10 w-full">
             <p className="headtext">My Work</p>
             <p className="subtext">
@@ -156,10 +176,16 @@ const About = () => {
               systems.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Grid 4 */}
-        <div className="grid-4 grid-default-color">
+        <motion.div
+          className="grid-4 grid-default-color"
+          variants={slideInLeft(0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <img
             src="assets/coding-pov.png"
             alt="card-coding"
@@ -170,10 +196,16 @@ const About = () => {
               Coding With Me <br /> Every Where
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Grid 5 */}
-        <div className="grid-5 grid-default-color">
+        <motion.div
+          className="grid-5 grid-default-color"
+          variants={slideInRight(0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="w-full">
             <p className="text-3xl font-bold text-white mb-6">My Skills</p>
 
@@ -206,7 +238,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
