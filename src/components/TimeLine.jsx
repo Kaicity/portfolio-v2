@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import { SparklesText } from '../components/SparklesText';
 import { Confetti } from '../components/Confetti';
 import { HeroVideoDialog } from '../components/HeroVideoDialog';
-import { fadeInFramer } from '../helper/fadeInFramer';
+import { fadeInFramer, slideInLeft } from '../helper/fadeInFramer';
+import { Lens } from '../components/Lens';
 
 function reseachScienceImageRendering() {
   return (
@@ -46,11 +47,7 @@ export const Timeline = ({ data }) => {
       </SparklesText>
       <div ref={ref} className="relative pb-20">
         {data.map((item, index) => (
-          <motion.div
-            variants={fadeInFramer('up', 0)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
+          <div
             key={index}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
@@ -71,37 +68,56 @@ export const Timeline = ({ data }) => {
                 <h3>{item.job}</h3>
               </div>
 
-              {item.videoUrl && (
-                <div className="relative mb-4">
-                  <HeroVideoDialog
-                    className="hidden dark:block"
-                    animationStyle="from-center"
-                    videoSrc={`https://www.youtube.com/embed/${item.videoUrl}`}
-                    thumbnailSrc="https://i.ytimg.com/vi/hyYEWD2tYzg/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGHIgRihvMA8=&rs=AOn4CLBdXDNRbnypEJ9XBd0tVE232NfscA"
-                    thumbnailAlt="Hero Video"
-                  />
-                </div>
-              )}
-
               {item.images.length > 0 && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                  {item.images.map((image) => (
-                    <img
-                      src={image}
-                      alt="hero template"
-                      width={500}
-                      height={500}
-                      className="h-40 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60 hover-animation"
-                    />
-                  ))}
+                  {item.images.map((image) => {
+                    let index = 0;
+                    return (
+                      <motion.div
+                        variants={fadeInFramer('up', index + 0.3)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.5 }}
+                      >
+                        <Lens>
+                          <img
+                            src={image}
+                            alt="hero template"
+                            width={500}
+                            height={500}
+                            className="h-40 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60 hover-animation"
+                          />
+                        </Lens>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               )}
 
               {item.contents.map((content, index) => (
-                <p className="mb-3 font-normal text-neutral-400" key={index}>
+                <motion.p
+                  className="mb-3 font-normal text-neutral-400"
+                  key={index}
+                  variants={slideInLeft(0.2)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                >
                   {content}
-                </p>
+                </motion.p>
               ))}
+
+              {item.videoUrl && (
+                <div className="relative mt-8">
+                  <HeroVideoDialog
+                    className="hidden dark:block"
+                    animationStyle="from-center"
+                    videoSrc={`https://www.youtube.com/embed/${item.videoUrl}`}
+                    thumbnailSrc={item.thumbnailSrc}
+                    thumbnailAlt="Hero Video"
+                  />
+                </div>
+              )}
 
               {item.certificate && item.certificate == 'rs' && (
                 <>
@@ -119,7 +135,7 @@ export const Timeline = ({ data }) => {
                 </>
               )}
             </div>
-          </motion.div>
+          </div>
         ))}
         <div
           style={{

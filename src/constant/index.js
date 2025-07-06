@@ -321,6 +321,7 @@ export const experiences = [
     title: 'Education',
     images: ['/assets/timeline/dhsg_1.webp', '/assets/timeline/dhsg_2.webp'],
     videoUrl: '',
+    thumbnailSrc: '',
     job: 'Study Information Technology at Sai Gon University',
     date: '2020-2025',
     contents: [
@@ -334,14 +335,23 @@ export const experiences = [
   },
   {
     title: 'Tiki Tini App Hackathon',
-    images: [],
+    images: [
+      '/assets/timeline/sb-team.jpg',
+      '/assets/timeline/hackathon.jpg',
+      '/assets/timeline/sb-team-checkin.jpg',
+      '/assets/timeline/tiki-final.jpg',
+    ],
     videoUrl: '5t8v-swDjLU?si=VZYtTMuvbMpcDvIp',
+    thumbnailSrc: '/assets/projects/sb-tiki.png',
     job: 'SB Shuttle',
     date: '2022',
     contents: [
       'Participated in backend development and API integration to support business features.',
       'Utilized JavaScript and the Tiki Tini App framework throughout the development lifecycle.',
-      ' Hackathon award in the top 30',
+      'Hackathon award in the top 30',
+      'Thank to Tiki: ',
+      '"Kết thúc thúc cuộc thi đầy cảm xúc , mặc dù team SB Shuttle đã không vượt qua đến vòng trong nhưng sẽ xem đây là trải nghiệm để bọn em học hỏi được kinh nghiệm của anh chị IT Mentor trong Tiki🔥 Mong đây sẽ là bước đầu tiên phát triển ứng dụng di động thành công sau này của team SB Shuttle và Tiki tini app sẽ càng phát triển hơn"',
+      '#hackingtrail2022 #nguyenminhthongCNTTSGU',
     ],
     certificate: 'hackathon',
   },
@@ -349,6 +359,7 @@ export const experiences = [
     title: 'Front-End Developer',
     images: [],
     videoUrl: '',
+    thumbnailSrc: '',
     job: 'Cloth Store',
     date: '2023-2024',
     contents: [
@@ -364,6 +375,7 @@ export const experiences = [
     title: 'Research Science',
     images: [],
     videoUrl: '',
+    thumbnailSrc: '',
     job: 'Developing Web Systems based on Distributed Databases',
     date: '2025-Present',
     contents: [
@@ -376,6 +388,7 @@ export const experiences = [
     title: 'Freelance Developer',
     images: [],
     videoUrl: '',
+    thumbnailSrc: '',
     job: 'ILC Outsouce',
     date: '2025-Present',
     contents: [

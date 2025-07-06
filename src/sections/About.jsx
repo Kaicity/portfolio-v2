@@ -48,16 +48,14 @@ const About = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="font-semibold text-gray-500 text-md">
-                Website:
-              </div>
+              <div className="font-semibold text-gray-500 text-md">Github:</div>
               <a
-                href="https://my-blogs-xi.vercel.app"
+                href="https://github.com/Kaicity"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 underline"
               >
-                my-blogs-xi.vercel.app
+                https://github.com/Kaicity
               </a>
             </div>
 
@@ -192,9 +190,7 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">
-              Coding With Me <br /> Every Where
-            </p>
+            <p className="headtext">Coding With Me</p>
           </div>
         </motion.div>
 

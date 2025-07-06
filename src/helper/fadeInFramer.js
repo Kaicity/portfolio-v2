@@ -1,7 +1,7 @@
 export const fadeInFramer = (direction = 'up', delay = 0) => ({
   hidden: {
     opacity: 0,
-    y: direction === 'up' ? 50 : -50,
+    y: direction === 'up' ? 50 : direction === 'down' ? -50 : 0,
   },
   show: {
     opacity: 1,
