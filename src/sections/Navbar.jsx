@@ -44,7 +44,11 @@ const Navbar = () => {
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white cursor-pointer"
             href="/"
           >
-            Nguyễn Minh Thông
+            <img
+              src="/technologist-light-skin-tone.svg"
+              alt="toggle"
+              className="w-10 h-10"
+            />
           </a>
           <button
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"

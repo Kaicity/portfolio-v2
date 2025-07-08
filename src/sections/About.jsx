@@ -1,14 +1,10 @@
+import { motion } from 'motion/react';
 import { useRef } from 'react';
 import { BackgroundBeamsWithCollision } from '../components/BackgroundBeamsWithCollision';
 import Card from '../components/Card';
 import { SkillBar } from '../components/SkillBar';
 import { SparklesText } from '../components/SparklesText';
-import { motion } from 'motion/react';
-import {
-  fadeInFramer,
-  slideInLeft,
-  slideInRight,
-} from '../helper/fadeInFramer';
+import { slideInLeft, slideInRight } from '../helper/fadeInFramer';
 
 const About = () => {
   const grid2Container = useRef();
@@ -64,11 +60,13 @@ const About = () => {
               <div>+84 703 338 458</div>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-start gap-4">
               <div className="font-semibold text-gray-500 text-md">
                 Location:
               </div>
-              <div>Ho Chi Minh City, Vietnam</div>
+              <div>
+                317A Nguyen Van Luong, Phu Lam Ward, Ho Chi Minh City, Viet Nam
+              </div>
             </div>
 
             <div className="flex items-center gap-4">
@@ -78,7 +76,7 @@ const About = () => {
 
             <div className="flex items-center gap-4">
               <div className="font-semibold text-gray-500 text-md">Level:</div>
-              <div>Junior Developer</div>
+              <div>Junior Web Developer</div>
             </div>
 
             <div className="flex items-center gap-4">

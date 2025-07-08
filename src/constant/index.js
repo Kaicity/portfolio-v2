@@ -377,7 +377,7 @@ export const experiences = [
     videoUrl: '',
     thumbnailSrc: '',
     job: 'Developing Web Systems based on Distributed Databases',
-    date: '2025-Present',
+    date: '2024-2025',
     contents: [
       'Scientific Research Project: Distributed Data Management and Query Optimization on SQL Server',
       'Applied advanced query optimization techniques to enhance performance in distributed environments, include indexing strategies, query rewriting, and partitioning.',
