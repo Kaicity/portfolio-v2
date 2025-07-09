@@ -26,7 +26,7 @@ const About = () => {
             />
             <div>
               <h3 className="text-2xl font-bold">Nguyen Minh Thong</h3>
-              <p className="text-gray-500">Full-stack Web Developer</p>
+              <p className="text-gray-500">Front-end Web Developer</p>
             </div>
           </div>
 
@@ -208,27 +208,27 @@ const About = () => {
               <div>
                 <p className="text-xl font-semibold mb-4">Frontend</p>
                 <SkillBar skill="React" percentage={90} />
-                <SkillBar skill="Next.js" percentage={85} />
-                <SkillBar skill="TypeScript" percentage={80} />
+                <SkillBar skill="Next.js" percentage={65} />
+                <SkillBar skill="TypeScript" percentage={70} />
                 <SkillBar skill="HTML/CSS" percentage={90} />
               </div>
 
               {/* Backend Skills */}
               <div>
                 <p className="text-xl font-semibold mb-4">Backend</p>
-                <SkillBar skill="Node.js" percentage={85} />
-                <SkillBar skill="Express.js" percentage={80} />
-                <SkillBar skill="MongoDB" percentage={75} />
-                <SkillBar skill="Firebase" percentage={70} />
+                <SkillBar skill="Node.js" percentage={65} />
+                <SkillBar skill="Express.js" percentage={60} />
+                <SkillBar skill="MongoDB" percentage={70} />
+                <SkillBar skill="Firebase" percentage={80} />
               </div>
 
               {/* Tools & Platforms */}
               <div>
                 <p className="text-xl font-semibold mb-4">Tools & Platforms</p>
-                <SkillBar skill="Git / GitHub" percentage={90} />
+                <SkillBar skill="Git / GitHub" percentage={100} />
                 <SkillBar skill="Docker" percentage={60} />
                 <SkillBar skill="Postman" percentage={80} />
-                <SkillBar skill="Figma" percentage={65} />
+                <SkillBar skill="Figma" percentage={90} />
               </div>
             </div>
           </div>
