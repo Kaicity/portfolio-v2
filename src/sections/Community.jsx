@@ -4,7 +4,7 @@ import { cn } from '../lib/utils';
 
 function Community() {
   return (
-    <div className="relative flex h-[60rem] w-full items-center justify-center bg-black">
+    <div className="relative flex h-[60rem] w-full items-center justify-center bg-black p-8">
       <div
         className={cn(
           'absolute inset-0',
